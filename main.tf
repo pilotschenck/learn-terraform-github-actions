@@ -30,8 +30,8 @@ provider "aws" {
 resource "random_pet" "sg" {}
 
 resource "aws_instance" "web" {
-  ami                    = "ami-830c94e3"
-  instance_type          = "t2.micro"
+  ami           = "ami-830c94e3"
+  instance_type = "t2.micro"
   tags = {
     Name = "HelloWorld"
   }
